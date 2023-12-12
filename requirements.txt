@@ -1,0 +1,5 @@
+pandas==2.1.4
+prompt_toolkit==3.0.41
+python-dotenv==1.0.0
+web3==6.0.0
+zksync2==0.6.0

@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "generate_wallet|swap",
+    "details": {
+      "wallet_count": 3,
+      "blockchain": "zksync",
+      "feed": true,
+      "feed_amount": 0.01,
+      "swap_fraction": 0.2
+    }
+  },
+  {
+    "id": 2,
+    "name":"swap",
+    "details": {
+      "blockchain": "zksync",
+      "balance": 0.01,
+      "swap_fraction": 0.2
+    }
+  }
+]

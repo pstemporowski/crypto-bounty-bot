@@ -1,0 +1,3 @@
+id,name,op_id,next_exec,repeat_every_time,diff_time,state
+1,Generating Wallets and Moving Assets,1,100,10800,0,active
+2,Test Strategie,2,100,14400,0,stopped
