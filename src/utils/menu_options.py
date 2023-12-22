@@ -125,7 +125,7 @@ FARMING_WALLET_MANAGER = MenuOption(
     "Farming Wallets",
     type="list",
     msg="Choose the operation you want to perform on Farming Wallets",
-    choices=["Import Wallets, Delete Wallets", "Back"],
+    choices=["Import Wallets", "Delete Wallets", "Back"],
     validator=None,
 )
 
@@ -187,6 +187,16 @@ MANAGE_BCKGRD_WORKER_MENU = MenuOption(
     msg="Choose if you want to start or stop the background worker",
 )
 
+SETTINGS_MENU = MenuOption(
+    "Settings",
+    type="list",
+    choices=[
+        "Sleep Time",
+        "Back",
+    ],
+    msg="Choose the Operation you want to perform",
+)
+
 MAIN_MENU = MenuOption(
     "Main Menu",
     type="list",
@@ -194,6 +204,7 @@ MAIN_MENU = MenuOption(
         MANAGE_STRATEGIES_MENU.name,
         CHOOSE_WALLET_TYPE_MENU.name,
         MANAGE_BCKGRD_WORKER_MENU.name,
+        SETTINGS_MENU.name,
         "Exit",
     ],
     msg="Choose the Operation you want to perform",

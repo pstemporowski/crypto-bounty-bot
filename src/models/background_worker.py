@@ -28,12 +28,16 @@ class BackgroundWorker:
             self.update_state()
             pipes_to_run = self.get_pipes_to_run()
             pipe_names = ", ".join(pipes_to_run["name"].astype(str))
-            logger.info(f"running pipes: { pipe_names }")
+            if len(pipes_to_run) == 0:
+                logger.info("No pipes to run, sleeping...")
+            else:
+                logger.info(f"running pipes: { pipe_names }")
+
             for index, row in pipes_to_run.iterrows():
                 self.prov_mngr.exec_op_by_id(row["op_id"])
                 self.update_next_exec_time(index)
 
-            time.sleep(1000)
+            time.sleep(100)
 
     def get_pipes_to_run(self):
         return self.pipes[

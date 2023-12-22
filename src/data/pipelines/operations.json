@@ -12,7 +12,7 @@
   },
   {
     "id": 2,
-    "name":"swap",
+    "name":"test_op",
     "details": {
       "blockchain": "zksync",
       "balance": 0.01,
