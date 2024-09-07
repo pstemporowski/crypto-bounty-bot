@@ -1,4 +1,4 @@
-# Crypto Bounty Bot
+# Crypto Bounty Bot (POC)
 
 ## Overview
 
